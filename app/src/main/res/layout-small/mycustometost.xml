@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/mytoastshape" >
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tvMessage"
+        android:layout_gravity="center_horizontal|top"
+        android:gravity="center_vertical"
+        android:paddingLeft="4dp"
+        android:paddingRight="10dp"
+        style="@style/AppTheme"
+        android:text="This is test message"
+            android:padding="15dp"
+            android:textColor="@color/abc_background_cache_hint_selector_material_dark"
+            />
+</LinearLayout>

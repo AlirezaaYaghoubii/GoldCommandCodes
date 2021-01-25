@@ -1,0 +1,355 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- The main content view -->
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/SecondLayout"
+        android:orientation="vertical"
+        android:layout_margin="1dp"
+        android:gravity="center"
+
+        >
+
+
+
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/LayerTop"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:baselineAligned="false"
+                android:layout_gravity="top"
+                android:orientation="vertical"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/Layer000"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="5dp"
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:id="@+id/HeaderLayout"
+                        android:orientation="vertical"
+                        android:gravity="center"
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:text="کدهای همراه اول"
+                            android:gravity="center_vertical"
+                            android:textSize="17sp"
+                            android:textColor="#ff000000"
+                            android:id="@+id/TxvHeader"
+
+                            />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/Layer001"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="5dp"
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LayerMCI"
+                        android:orientation="horizontal"
+                        android:background="@drawable/myshape"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"
+                        >
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@mipmap/mci"
+
+
+                            />
+
+                        <TextView
+                            android:layout_width="170dp"
+                            android:layout_height="30dp"
+                            android:text="کدهای دستوری همراه اول"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/TxvCode"
+                            android:textSize="17sp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/Layer002"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="1dp"
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LayerSms"
+                        android:orientation="horizontal"
+                        android:background="@drawable/myshape"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"
+                        >
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@mipmap/smsmci2"
+                            />
+
+                        <TextView
+                            android:layout_width="170dp"
+                            android:layout_height="30dp"
+                            android:text="پیامک های همراه اول"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/TxvSms"
+                            android:textSize="17sp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/Layer003"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="1dp"
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LayerCall"
+                        android:orientation="horizontal"
+                        android:background="@drawable/myshape"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"
+                        >
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@mipmap/phonemci"
+
+
+                            />
+
+                        <TextView
+                            android:layout_width="170dp"
+                            android:layout_height="30dp"
+                            android:text="شماره های تماس"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/TxvCall"
+                            android:textSize="17sp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/Layer004"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="1dp"
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LayerWeb"
+                        android:orientation="horizontal"
+                        android:background="@drawable/myshape"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"
+                        >
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@mipmap/webmci"
+
+
+                            />
+
+                        <TextView
+                            android:layout_width="170dp"
+                            android:layout_height="30dp"
+                            android:text="سرویس های وب"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/TxvWeb"
+                            android:textSize="17sp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/Layer005"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="1dp"
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LayerEmail"
+                        android:orientation="horizontal"
+                        android:background="@drawable/myshape"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"
+                        >
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@mipmap/emailmci"
+
+                            />
+
+                        <TextView
+                            android:layout_width="170dp"
+                            android:layout_height="30dp"
+                            android:text="آدرس های ایمیل"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/TxvEmail"
+                            android:textSize="17sp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/FooterLayout"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/headerfooter"
+            >
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ListView android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:background="#ff34ace0"/>
+
+
+</android.support.v4.widget.DrawerLayout>

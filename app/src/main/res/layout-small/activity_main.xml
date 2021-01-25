@@ -1,0 +1,506 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- The main content view -->
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/SecondLayout"
+        android:orientation="vertical"
+        android:layout_margin="1dp"
+        android:gravity="center"
+
+        >
+
+
+
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/Layer1"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:baselineAligned="false"
+                android:layout_gravity="top"
+                android:orientation="vertical"
+                >
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/Layer001"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="5dp"
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LayerMCI"
+                        android:orientation="horizontal"
+                        android:background="@drawable/myshape"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"
+                        >
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@mipmap/mci"
+
+
+                            />
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="30dp"
+                            android:text="کدهای همراه اول"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/TxvMCI"
+                            android:textSize="17sp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/Layer002"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="1dp"
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LayerIranCell"
+                        android:orientation="horizontal"
+                        android:background="@drawable/myshape"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"
+                        >
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@mipmap/irancell"
+                            />
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="30dp"
+                            android:text="کدهای ایرانسل"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/TxvIranCell"
+                            android:textSize="17sp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/Layer003"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="1dp"
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LayerRigtel"
+                        android:orientation="horizontal"
+                        android:background="@drawable/myshape"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"
+                        >
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@mipmap/rightel"
+
+
+                            />
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="30dp"
+                            android:text="کدهای رایتل"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/TxvRigtel"
+                            android:textSize="17sp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/Layer004"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="1dp"
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LayerFavrit"
+                        android:orientation="horizontal"
+                        android:background="@drawable/myshape"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"
+                        >
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@mipmap/star"
+
+
+                            />
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="30dp"
+                            android:text="کدهای مورد علاقه"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/TxvFavrit"
+                            android:textSize="17sp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/Layer005"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="1dp"
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LayerSearch"
+                        android:orientation="horizontal"
+                        android:background="@drawable/myshape"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"
+                        >
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@mipmap/search"
+
+                            />
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="30dp"
+                            android:text="جستجو"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/TxvSearch"
+                            android:textSize="17sp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/Layer006"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="1dp"
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LayerComment"
+                        android:orientation="horizontal"
+                        android:background="@drawable/myshape"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"
+                        >
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@mipmap/commenticon"
+
+                            />
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="30dp"
+                            android:text="ثبت نظر"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/TxvComment"
+                            android:textSize="17sp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/Layer007"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="1dp"
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LayerAppList"
+                        android:orientation="horizontal"
+                        android:background="@drawable/myshape"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"
+                        >
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@mipmap/market"
+
+                            />
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="30dp"
+                            android:text="سایر برنامه ها"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/TxvAppList"
+                            android:textSize="17sp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/Layer008"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="1dp"
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LayerAbouteMe"
+                        android:orientation="horizontal"
+                        android:background="@drawable/myshape"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"
+                        >
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@mipmap/androidpic"
+
+                            />
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="30dp"
+                            android:text="در مورد برنامه"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/TxvAbouteMe"
+                            android:textSize="17sp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/Layer009"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="1dp"
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/LayerExit"
+                        android:orientation="horizontal"
+                        android:background="@drawable/myshape"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="true"
+                        >
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:background="@mipmap/logout"
+
+                            />
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="30dp"
+                            android:text="خروج"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/TxvExit"
+                            android:textSize="17sp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/FooterLayout"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/headerfooter"
+            >
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ListView android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:background="#ff34ace0"/>
+
+
+</android.support.v4.widget.DrawerLayout>

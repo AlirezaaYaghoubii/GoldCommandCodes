@@ -1,0 +1,53 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="samaco.idepardazan.goldcommandcodes.Search">
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item
+        android:id="@+id/HomeMenu"
+        android:icon="@mipmap/home"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:title="صفحه اصلی"/>
+
+    <item
+        android:id="@+id/myfavorite"
+        android:icon="@mipmap/star"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:title="کدهای مورد علاقه"/>
+
+
+    <item
+        android:id="@+id/SearchMenu"
+        android:icon="@mipmap/search"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:title="جستجو"/>
+
+    <item
+        android:id="@+id/Comment"
+        android:icon="@mipmap/commenticon"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:title="ثبت نظر"/>
+
+    <item
+        android:id="@+id/MyAppList"
+        android:icon="@mipmap/market"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:title="سایر برنامه ها"/>
+
+    <item
+        android:id="@+id/MyApp"
+        android:icon="@mipmap/androidpic"
+        android:orderInCategory="100"
+        app:showAsAction="withText"
+        android:title="در مورد برنامه"/>
+
+
+
+</menu>

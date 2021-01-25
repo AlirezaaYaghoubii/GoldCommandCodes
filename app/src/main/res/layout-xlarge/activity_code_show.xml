@@ -1,0 +1,446 @@
+
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- The main content view -->
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/SecondLayout"
+        android:orientation="vertical"
+        android:layout_margin="1dp"
+        android:gravity="center"
+
+        >
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/LayerTop"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:layout_gravity="top"
+            android:orientation="vertical"
+            >
+
+
+
+            <AbsoluteLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.78" >
+
+                <TabHost
+                    android:id="@+id/tabHost"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_x="0dp"
+                    android:layout_y="0dp" >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TabWidget
+                            android:id="@android:id/tabs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+                        </TabWidget>
+
+                        <FrameLayout
+                            android:id="@android:id/tabcontent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <LinearLayout
+                                android:id="@+id/tab1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:contentDescription="HOME" >
+
+                                <ScrollView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/ScrollView1"
+                                    android:background="@drawable/code_show_layout"
+                                    android:layout_marginTop="5dp">
+
+                                <TextView
+                                    android:id="@+id/TxvCompleteComment"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:textColor="@android:color/black"
+                                    android:layout_marginTop="5dp"
+                                    android:padding="5dp"
+                                    android:gravity="right"
+                                    android:textSize="20sp"
+                                    android:text="جهت مشاهده طبق فرمت"
+                                    android:paddingLeft="10dp"
+
+                                    />
+
+                                </ScrollView>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/tab2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:contentDescription="HOME" >
+
+                                <ScrollView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/ScrollView2"
+                                    android:background="@drawable/code_show_layout"
+                                    android:layout_marginTop="5dp">
+
+                                <TextView
+                                    android:id="@+id/TxvFullComment"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:textColor="@android:color/black"
+                                    android:layout_marginTop="5dp"
+                                    android:padding="5dp"
+                                    android:gravity="right"
+                                    android:textSize="20sp"
+                                    android:text="جهت مشاهده طبق فرمت"
+                                    android:paddingLeft="10dp"/>
+
+                                </ScrollView>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/tab3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:contentDescription="HOME"
+                                android:orientation="vertical"
+                                >
+
+                                <ScrollView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:id="@+id/ScrMain"
+                                    android:layout_weight="1"
+                                    >
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:id="@+id/Layer1"
+                                        android:orientation="vertical"
+                                        android:gravity="center_horizontal"
+                                        android:background="#ffffffff"
+                                        android:layout_margin="10dp"
+
+                                        >
+
+                                        <LinearLayout
+
+                                            android:layout_width="match_parent"
+                                            android:layout_height="60dp"
+                                            android:background="@drawable/code_show_layout"
+
+                                            android:id="@+id/SecondLayout1"
+                                            android:gravity="center"
+
+
+                                            >
+
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="45dp"
+                                                android:id="@+id/HeaderLayout"
+                                                android:orientation="vertical"
+                                                android:gravity="center"
+                                                android:layout_margin="10dp"
+                                                >
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="50dp"
+                                                    android:text="کدهای USSD"
+                                                    android:gravity="center_vertical"
+                                                    android:textSize="20sp"
+                                                    android:textColor="#ff000000"
+                                                    android:id="@+id/TxvHeader"
+
+                                                    />
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:id="@+id/scrllsmall"
+                                            android:layout_marginTop="5dp"
+                                            android:background="@drawable/code_show_layout"                >
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:id="@+id/TxvShow"
+                                                android:text="جهت مشاهده طبق فرمت"
+                                                android:textColor="@android:color/black"
+                                                android:layout_marginTop="5dp"
+                                                android:padding="5dp"
+                                                android:gravity="center"
+                                                android:textSize="18sp"
+                                                android:focusableInTouchMode="true"
+                                                android:focusable="true"
+
+                                                />
+                                        </LinearLayout>
+
+
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:background="@drawable/code_show_layout"
+                                            android:id="@+id/TxvSmsNo"
+                                            android:layout_marginTop="5dp"
+                                            android:textSize="18sp"
+                                            android:textColor="@android:color/black"
+                                            android:text="جهت مشاهده طبق فرمت"
+                                            android:gravity="center"
+
+                                            />
+
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:id="@+id/EdtSmsBody"
+                                            android:background="@drawable/editboxlayout"
+                                            android:layout_marginTop="5dp"
+                                            android:textColor="@android:color/black"
+                                            android:hint="متن پیامک را اینجا وارد کنید"
+                                            android:textColorHint="@android:color/secondary_text_light"
+                                            android:gravity="center"
+                                            android:textSize="20sp"
+                                            android:autoText="false" />
+
+
+                                        <Button
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:text="اجرای کد"
+                                            android:textColor="@android:color/black"
+                                            android:id="@+id/BtnSendSms"
+                                            android:textSize="18sp"
+                                            android:layout_marginTop="5dp"
+
+                                            />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+                                            <Button
+                                                android:layout_width="0dp"
+                                                android:layout_height="50dp"
+                                                android:drawableRight="@android:drawable/btn_star_big_off"
+                                                android:text="حذف از لیست"
+                                                android:textColor="@android:color/black"
+                                                android:id="@+id/BtnUnFavorite"
+                                                android:textSize="17sp"
+                                                android:layout_marginTop="5dp"
+                                                android:layout_weight="1"
+                                                />
+
+                                            <Button
+                                                android:layout_width="0dp"
+                                                android:layout_height="50dp"
+                                                android:drawableRight="@android:drawable/btn_star_big_on"
+                                                android:text="مورد علاقه"
+                                                android:textColor="@android:color/black"
+                                                android:id="@+id/BtnFavorite"
+                                                android:textSize="17sp"
+                                                android:layout_marginTop="5dp"
+                                                android:layout_weight="1"
+                                                />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                            <Button
+                                                android:layout_width="0dp"
+                                                android:layout_height="50dp"
+                                                android:drawableRight="@android:drawable/ic_menu_save"
+                                                android:text="کپی در کلیپ بورد"
+                                                android:textColor="@android:color/black"
+                                                android:id="@+id/BtnCopy"
+                                                android:textSize="17sp"
+                                                android:layout_marginTop="5dp"
+                                                android:layout_weight="1"
+                                                />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:id="@+id/Scrll1"
+                                            android:background="@drawable/code_show_layout"
+                                            android:scrollbarAlwaysDrawVerticalTrack="true"
+                                            android:layout_marginTop="5dp"                >
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:id="@+id/TxvShowDetails"
+                                                android:textColor="@android:color/black"
+                                                android:layout_marginTop="5dp"
+                                                android:padding="5dp"
+                                                android:gravity="center"
+                                                android:textSize="16sp"
+                                                android:text="جهت مشاهده طبق فرمت"
+
+                                                />
+
+                                        </LinearLayout>
+
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="30dp"
+                                            android:orientation="vertical"
+                                            android:layout_marginTop="5dp"
+
+                                            android:id="@+id/LayerShare">
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="30dp"
+                                                android:id="@+id/TxtCommon"
+                                                android:text="به اشتراک گذاری"
+                                                android:textColor="@android:color/black"
+                                                android:gravity="top"
+                                                android:layout_gravity="top"
+                                                android:layout_marginTop="5dp"
+                                                />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:orientation="horizontal"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_weight="1"
+                                            android:gravity="top|center"
+                                            android:layout_gravity="top|center"
+                                            android:id="@+id/LayerButtons"
+                                            android:layout_marginBottom="30dp">
+
+                                            <Button
+                                                android:layout_width="100dp"
+                                                android:layout_height="40dp"
+                                                android:text="..."
+                                                android:textColor="@android:color/black"
+                                                android:id="@+id/BtnNet"
+                                                android:textSize="16sp"
+                                                android:drawableRight="@android:drawable/ic_menu_directions"
+                                                />
+
+                                            <Button
+                                                android:layout_width="100dp"
+                                                android:layout_height="40dp"
+
+                                                android:text="ایمیل"
+                                                android:textColor="@android:color/black"
+                                                android:id="@+id/BtnEmail"
+                                                android:textSize="16sp"
+
+                                                android:layout_marginLeft="5dp"
+                                                android:layout_marginRight="5dp"
+                                                android:drawableRight="@android:drawable/sym_action_email"
+
+                                                />
+
+                                            <Button
+                                                android:layout_width="100dp"
+                                                android:layout_height="40dp"
+                                                android:text="پیامک"
+                                                android:textColor="@android:color/black"
+                                                android:id="@+id/BtnSms"
+                                                android:textSize="16sp"
+                                                android:drawableRight="@android:drawable/sym_action_chat"
+
+                                                />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                </ScrollView>
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </LinearLayout>
+
+                </TabHost>
+
+
+            </AbsoluteLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/FooterLayout"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/headerfooter"
+            >
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+<ListView android:id="@+id/left_drawer"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:choiceMode="singleChoice"
+    android:divider="@android:color/transparent"
+    android:dividerHeight="0dp"
+    android:background="#ff34ace0"/>
+
+
+    </android.support.v4.widget.DrawerLayout>

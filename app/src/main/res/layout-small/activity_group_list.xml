@@ -1,0 +1,132 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- The main content view -->
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/SecondLayout"
+        android:orientation="vertical"
+        android:layout_margin="1dp"
+        android:gravity="center"
+
+        >
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/LayerTop"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:baselineAligned="false"
+                android:layout_gravity="top"
+                android:orientation="vertical"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/Layer000"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="5dp"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:id="@+id/HeaderLayout"
+                        android:orientation="vertical"
+                        android:gravity="center"
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:text="کدهای USSD"
+                            android:gravity="center_vertical"
+                            android:textSize="17sp"
+                            android:textColor="#ff000000"
+                            android:id="@+id/TxvHeader"
+
+                            />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/Layer1"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:background="#ffffffff"
+                    android:baselineAligned="false"
+                    android:layout_gravity="top">
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/LstVwDetails"
+                        android:background="#ffffffff"
+                        android:divider="@null"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="2dp"
+                        ></ListView>
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/FooterLayout"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/headerfooter"
+            >
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ListView android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:background="#ff34ace0"/>
+
+
+</android.support.v4.widget.DrawerLayout>

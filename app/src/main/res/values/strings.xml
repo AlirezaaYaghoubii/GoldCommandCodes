@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">کدهای دستوری طلایی</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">...</string>
+    <string name="title_activity_search">Search</string>
+
+
+    <string-array name="dokmeha">
+        <item>تنظیمات</item>
+        <item>درباره ما</item>
+        <item>خروج</item>
+    </string-array>
+
+    <string name="drawer_open">منو باز</string>
+    <string name="drawer_close">منو بسته</string>
+    <string name="title_activity_mci">MCI</string>
+    <string name="title_activity_iran_cell">IranCell</string>
+    <string name="title_activity_rightel">Rightel</string>
+    <string name="title_activity_about_app">AboutApp</string>
+    <string name="title_activity_group_list">GroupList</string>
+    <string name="title_activity_code_list">CodeList</string>
+    <string name="title_activity_code_show">CodeShow</string>
+
+</resources>

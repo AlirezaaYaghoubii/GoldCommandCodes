@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#ffffffff">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/LayerMain"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/newlistviewbg"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/LayerText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/newlistviewbg"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="2dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="15sp"
+                android:text="سلام"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#ff000000"
+                android:id="@+id/myText"
+                />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textSize="12sp"
+                android:text="*710#"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@android:color/tertiary_text_light"
+                android:id="@+id/myno"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@android:color/darker_gray"
+
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+
+        />
+
+</LinearLayout>

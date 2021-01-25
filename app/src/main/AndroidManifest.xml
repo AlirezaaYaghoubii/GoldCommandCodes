@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="samaco.idepardazan.goldcommandcodes" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/main1"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Search"
+            android:label="@string/title_activity_search"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".MCI"
+            android:label="@string/title_activity_mci"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".IranCell"
+            android:label="@string/title_activity_iran_cell"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Rightel"
+            android:label="@string/title_activity_rightel"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".AboutApp"
+            android:label="@string/title_activity_about_app"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".GroupList"
+            android:label="@string/title_activity_group_list"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".CodeList"
+            android:label="@string/title_activity_code_list"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".CodeShow"
+            android:label="@string/title_activity_code_show"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>
